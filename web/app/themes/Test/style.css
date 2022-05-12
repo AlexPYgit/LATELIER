@@ -1,0 +1,18 @@
+/*
+Theme Name: Test
+Text Domain: test
+Version: 1 
+Tested up to: 5.9
+Description: Theme for skill test
+Author: Alexis PAYET
+*/
+
+/*Style applied with Bootstrap 5*/
+
+*{
+    margin-top: 0 !important;
+}
+
+.navbar-header{
+    max-width: 1240px;
+}
