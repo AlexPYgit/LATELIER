@@ -1,5 +1,6 @@
 <?php 
 
+require get_template_directory() . '/inc/acf-block-parts.php';
 
 function test_support_theme(){
     add_theme_support('title-tag');
@@ -21,6 +22,12 @@ function test_register_style(){
 
 add_action('wp_enqueue_scripts', 'test_register_style');
 
+function test_theme_CSS_style(){
+    wp_enqueue_style('style-css', get_template_directory_uri() . '/style.css');
+}
+
+add_action('wp_enqueue_scripts', 'test_theme_CSS_style');
+
 function test_theme_menu_css_class($classes){
     $classes[] = "nav-item";
     return $classes;
@@ -37,26 +44,3 @@ add_filter('nav_menu_link_attributes', 'test_theme_menu_link');
 
 
 
-// Gestion des Block acf
-
-add_filter('block_categories', function($categories){
-    $categories[]= [
-        'slug'=> 'theme',
-        'title'=> 'block theme test',
-        'icon'=> null,
-    ];
-    return $categories;
-});
-
-
-
-if(function_exists('acf_register_block_type')){
-    add_action('acf/init', function(){
-        acf_register_block_type([
-            'name'=> 'hero_home',
-            'title'=>"Entête de la page d'acceuil",
-            'category'=> 'theme',
-            'render_template'=> 'acf_blocks/hero_home.php'
-        ]);
-    });
-}

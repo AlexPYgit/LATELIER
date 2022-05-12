@@ -9,10 +9,53 @@ Author: Alexis PAYET
 
 /*Style applied with Bootstrap 5*/
 
-*{
-    margin-top: 0 !important;
+html {
+  margin-top: 100px !important;
+}
+.site-page{
+    display: flex;
+    justify-content: center;
 }
 
-.navbar-header{
-    max-width: 1240px;
+.pattern-image-hero{
+    position: absolute;
+    left: -23px;
+    top: 479px;
+}
+
+/* style block */
+.block-section {
+  padding: 100px 0 120px;
+}
+.block-container {
+  max-width: 1200px;
+}
+.block-display {
+  width: 100%;
+  display: flex;
+}
+.block-content {
+  width: 50%;
+}
+.block-element{
+    margin-bottom: 30px;
+}
+
+.navbar-header {
+  max-width: 1240px;
+}
+
+@media (max-width: 767px) {
+  .block-section {
+    padding: 100px 0 120px;
+  }
+  .block-container {
+    max-width: 767px;
+  }
+  .block-display {
+    flex-wrap: wrap;
+  }
+  .block-content {
+    width: 100%;
+  }
 }
