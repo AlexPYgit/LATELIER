@@ -42,5 +42,15 @@ if(function_exists('acf_register_block_type')){
             'render_template'=> 'acf_blocks/students-block.php'
             ));
     });
+
+    add_action('acf/init', function(){
+        acf_register_block_type(
+            array(
+            'name'=> 'slider',
+            'title'=>"Slider",
+            'category'=> 'theme',
+            'render_template'=> 'acf_blocks/slider.php'
+            ));
+    });
    
 }

@@ -8,7 +8,6 @@ function test_support_theme(){
     add_theme_support('menus');
     register_nav_menu('header', 'Menu de navigation');
     add_theme_support('custom-logo', array('height'=> 98, 'width'=> 164));
-
 }
 
 add_action('after_setup_theme', 'test_support_theme');
@@ -19,7 +18,8 @@ function test_theme_register_script(){
     wp_enqueue_script('bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js');
     wp_enqueue_script('autoCompleteJS','https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/10.2.7/autoComplete.min.js');
     wp_enqueue_style('autoCompleteCSS','https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css');
-    wp_enqueue_script('test_theme_autoCompleteJS', get_template_directory_uri(). '/assets/autoCompleteJS/autoComplete.js');
+    wp_enqueue_style('sliderCSS','https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css');
+    wp_enqueue_script('sliderJS', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js');
 }
 
 add_action('wp_enqueue_scripts', 'test_theme_register_script');

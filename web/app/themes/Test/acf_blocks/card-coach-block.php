@@ -26,7 +26,7 @@
             <div class=" bolck-content" >
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <?= wp_get_attachment_image($sub_value_img_ID,null,false,array('alt', "class"=> "img-fluid "));?>
+                    <?php wp_get_attachment_image($sub_value_img_ID,null,false,array('alt', "class"=> "img-fluid "));?>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
