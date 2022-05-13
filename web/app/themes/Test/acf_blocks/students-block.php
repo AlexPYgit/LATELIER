@@ -8,7 +8,7 @@
                     $description = get_field('description');
                     $button_text = get_field('button_text');
                 ?>
-                    <h1> <?= $tile?></h1>
+                    <h2> <?= $tile?></h2>
                     <p> <?= $description ?> </p>
                     <div class="btn btn-success"> <?= $button_text ?></div>
                 </div>
@@ -17,7 +17,7 @@
                
                 <?php 
                     $numb_rows = get_field('student_photo');
-                    count($rows);
+                    // count($rows);
                     ?>
                 <div class="col-7 d-flex "> 
 

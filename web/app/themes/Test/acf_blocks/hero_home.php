@@ -4,7 +4,7 @@
             <div class="block-content pt-3">
                 <div class="">
                     <p class="block-element">on demande</p>
-                    <h1 class="block-element fs-1 text"> <?= get_field('title') ?></h1>
+                    <h1 class="block-element text"> <?= get_field('title') ?></h1>
                     <p class="block-element " style="box-sizing: border-box;" >Get healthier by following lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                         Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
                     <div>

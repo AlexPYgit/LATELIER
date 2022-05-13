@@ -2,7 +2,7 @@
     <div class="block-container">
         <div class="mb-5">
             <p>WE HELP YOU STAY HEALTHY</p>
-            <h1>The Trainers</h1>
+            <h2>The Trainers</h2>
             <p >Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
             <div>
                     <img src="<?= get_template_directory_uri(). '/assets/images/pattern.png' ?>" alt="décoration" width="200" height="96" >
