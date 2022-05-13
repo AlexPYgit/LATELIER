@@ -11,11 +11,9 @@
                     <h1> <?= $tile?></h1>
                     <p> <?= $description ?> </p>
                     <div class="btn btn-success"> <?= $button_text ?></div>
-
                 </div>
 
                 <!-- partie de la section qui affiche les photo des étudients -->
-
                
                 <?php 
                     $numb_rows = get_field('student_photo');
@@ -39,7 +37,6 @@
                     </div>
 
                     <?php  endwhile; endif; ?>
-                   
               
             </div>
         </div>
