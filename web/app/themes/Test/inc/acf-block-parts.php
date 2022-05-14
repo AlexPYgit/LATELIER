@@ -52,5 +52,15 @@ if(function_exists('acf_register_block_type')){
             'render_template'=> 'acf_blocks/slider.php'
             ));
     });
+
+    add_action('acf/init', function(){
+        acf_register_block_type(
+            array(
+            'name'=> 'title-page',
+            'title'=>"Title page",
+            'category'=> 'theme',
+            'render_template'=> 'acf_blocks/title-page.php'
+            ));
+    });
    
 }

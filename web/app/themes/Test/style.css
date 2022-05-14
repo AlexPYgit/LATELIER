@@ -40,9 +40,16 @@ h3{
 }
 
 .pattern-image-hero{
+    z-index: -10;
     position: absolute;
     left: -23px;
     top: 479px;
+}
+.pattern-title{
+  z-index: -10;
+  position: relative;
+  left: -90px;
+  top: -50px;
 }
 
 footer{
