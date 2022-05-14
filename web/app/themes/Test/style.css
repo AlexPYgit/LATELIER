@@ -12,6 +12,9 @@ Author: Alexis PAYET
 *{
   --color-title: #051145;
   --color-background-footer:#ecf0f2;
+  --color-p:#303030;
+  --color-social-svg: #051145;
+  --color-social-svg-hover:#216f62
 }
 
 html{
@@ -22,7 +25,6 @@ h1,h2,h3,h4,h5,h6{
   color: var(--color-title);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
-
 }
 h1{
   font-size: 5rem;
@@ -32,6 +34,9 @@ h2{
 }
 h3{
   font-size: 2.13rem;
+}
+p{
+  color:var(--color-p);
 }
 
 .site-page{
@@ -55,8 +60,23 @@ h3{
 footer{
   background-color: var(--color-background-footer);
 }
+svg{
+  fill: var(--color-social-svg);
+}
+.link-svg{
+  text-decoration: none;
+  transition: all .2s linear;
+}
+.link-svg:hover{
+color: var(--color-social-svg-hover);}
 
 /* style block */
+.block-section-bottom{
+  padding-bottom: 100px;
+}
+.block-section-top{
+  padding-top: 100px;
+}
 .block-section {
   padding: 100px 0 120px;
 }

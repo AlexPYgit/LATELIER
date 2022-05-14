@@ -40,8 +40,5 @@
               
             </div>
         </div>
-        <div>
-            <img style="z-index: -10; position:relative; top:-770px; left:-200px;" width="360" height="480" src="<?= get_template_directory_uri(). '/assets/images/bg-shape.jpg' ?>" alt="décoration">
-        </div>
     </div>
 </div>
