@@ -970,15 +970,15 @@
         },
         {
             "name": "wpackagist-plugin/forminator",
-            "version": "1.15.13",
+            "version": "1.15.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/forminator/",
-                "reference": "tags/1.15.13"
+                "reference": "tags/1.15.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/forminator.1.15.13.zip"
+                "url": "https://downloads.wordpress.org/plugin/forminator.1.15.14.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
