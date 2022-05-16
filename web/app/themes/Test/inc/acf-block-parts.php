@@ -17,7 +17,7 @@ if(function_exists('acf_register_block_type')){
         acf_register_block_type(
             array(
             'name'=> 'hero_home',
-            'title'=>"Entête de la page d'acceuil",
+            'title'=>"header front page",
             'category'=> 'theme',
             'render_template'=> 'acf_blocks/hero_home.php'
             ));
@@ -37,7 +37,7 @@ if(function_exists('acf_register_block_type')){
         acf_register_block_type(
             array(
             'name'=> 'students-block',
-            'title'=>"Block étudient",
+            'title'=>"student block",
             'category'=> 'theme',
             'render_template'=> 'acf_blocks/students-block.php'
             ));
@@ -60,6 +60,16 @@ if(function_exists('acf_register_block_type')){
             'title'=>"Title page",
             'category'=> 'theme',
             'render_template'=> 'acf_blocks/title-page.php'
+            ));
+    });
+
+    add_action('acf/init', function(){
+        acf_register_block_type(
+            array(
+            'name'=> 'feature-and-courses',
+            'title'=>"feature and courses",
+            'category'=> 'theme',
+            'render_template'=> 'acf_blocks/feature-and-courses.php'
             ));
     });
    

@@ -1,9 +1,9 @@
-<div class=" block-section">
+<div class=" block-section d-flex justify-content-center">
     <div class="block-container">
         <div class="block-display d-flex flex-row  justify-content-between " >
             <div class="block-content pt-3">
-                <div class="">
-                    <p class="block-element">on demande</p>
+                <div >
+                    <div class="block-element text-uppercase">on-demande video courses</div>
                     <h1 class="block-element text"> <?= get_field('title') ?></h1>
                     <p class="block-element " style="box-sizing: border-box;" >Get healthier by following lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                         Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>

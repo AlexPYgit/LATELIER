@@ -1,5 +1,6 @@
-<div class="site-page">
-    <div class="block-section-bottom">
+
+<div class="block-section-bottom d-flex justify-content-center">
+    <div class="block-container">
         <div class="mb-5">
             <h2><?= get_field('slider_title') ?></h2>
         </div>

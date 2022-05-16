@@ -1,11 +1,11 @@
-<section class="block-section">
+<section class="block-section d-flex justify-content-center">
     <div class="block-container">
         <div class="mb-5">
-            <p>WE HELP YOU STAY HEALTHY</p>
+            <div style="letter-spacing:2px;" class="fw-bold">WE HELP YOU STAY HEALTHY</div>
             <h2>The Trainers</h2>
-            <p >Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
+            <div class="col-md-5 pe-4" >Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</div>
             <div class="position-relative d-flex justify-content-end">
-                    <img style="top:-200px;" class=" start-90  position-absolute" src="<?= get_template_directory_uri(). '/assets/images/pattern.png' ?>" alt="décoration" width="200" height="96" >
+                    <img style="top:-300px;" class=" start-90  position-absolute" src="<?= get_template_directory_uri(). '/assets/images/pattern.png' ?>" alt="décoration" width="200" height="96" >
             </div>
         </div>
         <div class="block-display">

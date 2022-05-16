@@ -1,4 +1,4 @@
-<div class="block-section">
+<div class="block-section d-flex justify-content-center">
     <div class="block-container">
         <div class="block-display justify-content-between">
             <div class="col-4">
@@ -9,7 +9,7 @@
                     $button_text = get_field('button_text');
                 ?>
                     <h2> <?= $tile?></h2>
-                    <p> <?= $description ?> </p>
+                    <p class="col-md-10"> <?= $description ?> </p>
                     <div class="btn btn-success"> <?= $button_text ?></div>
                 </div>
 
