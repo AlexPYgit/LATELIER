@@ -2,7 +2,6 @@
 
 
         </div>
-
         <footer class="background-color">
             <div class="block-section">
                 <div>
@@ -11,10 +10,8 @@
                             <div class="mb-5">
                                 <h2>Trouver un autre cours ? </h2>
                             </div>
-                            <div class="autoComplete_wrapper mb-4 ">
-                                <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="2048" tabindex="1">
-                            </div>
-                            <div class="btn btn-success ">Rechercher</div>                        
+                            <!-- search -->
+                            <?= get_search_form() ?>
                         </div>
                         <div>
                             <a href="#" class="link-svg ms-3">
@@ -63,7 +60,6 @@
                     </div>
                 </div>
             </div>
-        
         </footer>
 
         <!-- autoCompleteJS -->
