@@ -6,8 +6,8 @@
                 while(have_rows('partner')) : the_row();
                 $logo_partner = get_sub_field('logo_partner');
             ?>
-            <div class="col-md-2">
-                <?= wp_get_attachment_image($logo_partner,array('140','78'),false,array('alt')); ?>
+            <div class="col-md-2" >
+                <?= wp_get_attachment_image($logo_partner,array('140','78'),false,array('alt', 'class'=>'logo-partner')); ?>
             </div>
             <?php endwhile; endif;?>            
         </div>

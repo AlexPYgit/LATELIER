@@ -59,6 +59,8 @@ li{
 .background-color{
   background-color: var(--color-background);
 }
+
+/* elements */
 svg{
   fill: var(--color-social-svg);
 }
@@ -68,6 +70,12 @@ svg{
 }
 .link-svg svg:hover{
  fill: var(--color-global-hover);
+}
+.logo-partner{
+  opacity: 0.8;
+}
+.logo-partner:hover{
+  opacity: 1;
 }
 
 

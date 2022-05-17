@@ -82,5 +82,15 @@ if(function_exists('acf_register_block_type')){
             'render_template'=> 'acf_blocks/acf-logo-block.php'
             ));
     });
+
+    add_action('acf/init', function(){
+        acf_register_block_type(
+            array(
+            'name'=> 'fame',
+            'title'=>"Fame block",
+            'category'=> 'theme',
+            'render_template'=> 'acf_blocks/acf-fame-block.php'
+            ));
+    });
    
 }
