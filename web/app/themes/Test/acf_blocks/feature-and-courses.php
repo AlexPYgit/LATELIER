@@ -75,15 +75,16 @@
                     <div class="mt-3 w-100">
                         <ul class="w-100 p-0 d-grid gap-3">
                             <?php 
-                                if(have_rows('benefits')) 
-                                while(have_rows('benefits')) : the_row();?>
+                                if(have_rows('benefits')):
+                                  while(have_rows('benefits')) : the_row();?>
 
                                 <li class="d-flex align-items-center w-100" style="list-style-type: none;">
                                     <div style="background-color: #278575; border-radius:50%; margin:1%; width:4px; height:4px; outline-offset: 3px; outline: 1px solid #278575;"></div>
                                     <span class="w-100 ps-2"><?= get_sub_field('benefits_title') ?></span>
                                 </li>
 
-                            <?php endwhile; ?>
+                                <?php  endwhile;endif;   ?>  
+                                
                         </ul>
                     </div>
                 </div>

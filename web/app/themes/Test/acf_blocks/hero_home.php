@@ -3,7 +3,7 @@
         <div class="block-display d-flex flex-row  justify-content-between " >
             <div class="block-content pt-3">
                 <div >
-                    <div class="block-element text-uppercase">on-demande video courses</div>
+                    <div class="block-element text-uppercase d-flex align-items-center"> <span class="me-3" style="display:block; background-color: var(--color-global-hover);border-radius:50%; width:15px;height:15px;"></span> on-demande video courses</div>
                     <h1 class="block-element text"> <?= get_field('title') ?></h1>
                     <p class="block-element " style="box-sizing: border-box;" >Get healthier by following lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                         Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>

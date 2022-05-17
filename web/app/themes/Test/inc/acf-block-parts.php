@@ -72,5 +72,15 @@ if(function_exists('acf_register_block_type')){
             'render_template'=> 'acf_blocks/feature-and-courses.php'
             ));
     });
+
+    add_action('acf/init', function(){
+        acf_register_block_type(
+            array(
+            'name'=> 'logo_block',
+            'title'=>"Logo block",
+            'category'=> 'theme',
+            'render_template'=> 'acf_blocks/acf-logo-block.php'
+            ));
+    });
    
 }

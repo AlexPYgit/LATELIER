@@ -56,8 +56,6 @@ li{
   top: -50px;
 }
 
-
-
 .background-color{
   background-color: var(--color-background);
 }
@@ -79,6 +77,11 @@ svg{
 }
 .nav-link:hover{
   color: var(--color-global-hover) !important;
+}
+
+/* form contact */
+.form_show{
+  display: block !important;
 }
 
 /* style block */
