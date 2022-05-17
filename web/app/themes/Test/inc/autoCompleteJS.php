@@ -1,7 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
     <script>
         const autoCompleteJS = new autoComplete({
-            placeHolder: "Saissie un titre de cour",
+            placeHolder: "Rechercher un cours",
             data: {
                 src: async ()=> {
             let rep = await fetch('https://bedrock.local/wp-json/wp/v2/posts');

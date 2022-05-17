@@ -3,7 +3,17 @@ web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
 web/app/upgrade
-web/app/uploads/*
+web/app/uploads/2022/05/.jpg
+web/app/uploads/2022/05/.png
+web/app/uploads/2022/05/.html
+web/app/uploads/2022/05/.htaccess
+web/app/uploads/forminator
+web/app/uploads/.json
+web/app/uploads/.gitkeep
+
+
+
+
 !web/app/uploads/.gitkeep
 
 # WordPress
