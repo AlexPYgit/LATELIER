@@ -1,6 +1,7 @@
 <?php 
 
 require get_template_directory() . '/inc/acf-block-parts.php';
+require_once get_template_directory(). '/inc/acf-menu-block.php'; 
 
 function test_support_theme(){
     add_theme_support('title-tag');
@@ -37,11 +38,9 @@ function test_theme_menu_css_class($classes){
 
 add_filter('nav_menu_css_class', 'test_theme_menu_css_class');
 
-function test_theme_menu_link($attrs){
-    $attrs['class'] = 'nav-link';
-    return $attrs;
+function test_theme_menu_link($atts){
+    $atts['class'] = 'nav-link px-3';
+    return $atts;
 }
 
 add_filter('nav_menu_link_attributes', 'test_theme_menu_link');
-
-

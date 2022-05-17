@@ -14,7 +14,7 @@ Author: Alexis PAYET
   --color-background:#ecf0f2;
   --color-body:#303030;
   --color-social-svg: #051145;
-  --color-social-svg-hover:#216f62
+  --color-global-hover:#216f62;
 }
 
 html{
@@ -68,8 +68,18 @@ svg{
   text-decoration: none;
   transition: all .2s linear;
 }
-.link-svg:hover{
-color: var(--color-social-svg-hover);}
+.link-svg svg:hover{
+ fill: var(--color-global-hover);
+}
+
+
+/* nav bar */
+.navbar-header {
+  max-width: 1240px;
+}
+.nav-link:hover{
+  color: var(--color-global-hover) !important;
+}
 
 /* style block */
 .block-section-bottom{
@@ -97,28 +107,35 @@ color: var(--color-social-svg-hover);}
 }
 
 /* separator */
-.separator::before{
-  display: block;
-  content: "";
-  border-bottom: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  border-top: 1px solid black;
+.separator{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 .separator::after{
-  display: block;
-  content: "";
-  border-bottom: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  border-top: 1px solid black;
-}
+     display: block;
+   
+    content: "";
+    border-bottom: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow : 1;
+    border-top: 1px solid #303030;
 
-.navbar-header {
-  max-width: 1240px;
 }
+.separator::before{
+    display: block;
+    
+    content: "";
+    border-bottom: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow : 1;
+    border-top: 1px solid #303030;
+  }
+
+
+
 
 @media (max-width: 767px) {
   .block-section {

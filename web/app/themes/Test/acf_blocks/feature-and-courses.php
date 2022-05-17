@@ -39,10 +39,12 @@
                     <?php  endwhile;?>          
             </div>
             <div class="py-5">
-                <div class="separator text-center py-4">
-                    <span class="text-center">
-                        Feature & Benefits
-                    </span> 
+                <div class=" text-center w-100 py-4 d-flex">
+                    <span class="separator d-flex align-items-center w-100">
+                        <span class="text-center mx-3">
+                            Feature & Benefits
+                        </span> 
+                    </span>
                 </div>
             </div>
             <div class="d-flex justify-content-between">
